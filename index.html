@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>facebook-event-crawler</title>
+  <style>
+    .startValue {
+      display: flex;
+      align-items: center;
+      margin: 0px 0px 5px
+    }
+
+    .startValue input {
+      display: block;
+    }
+
+    .label {
+      width: 165px
+    }
+
+    .headlinex {
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 8px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="headlinex">facebook-event-scraper</div>
+  <div class="startValue">
+    <div class="label">electron-debug-port => &nbsp;</div>
+    <input type="text" id="electronDebugPort" disabled></input>
+  </div>
+  <div class="startValue">
+    <div class="label">start chrome as => &nbsp;</div>
+    <input type="text" id="chromeSpawnBrowserName"></input>
+  </div>
+  <div class="startValue">
+    <div class="label">with params => &nbsp;</div>
+    <input type="text" size="60" id="chromeSpawnCliCommandParams"></input>
+  </div>
+  <div class="startValue">
+    <div class="label">events address => &nbsp;</div>
+    <input type="text" size="60" id="facebookEventsAddress"></input>
+  </div>
+  <input type="text" size="60" id="address_bar" value="" />
+  <button id="Go" onclick="goToAddress()" disabled>Go</button>
+  <script src="./renderer.js"></script>
+</body>
+
+</html>

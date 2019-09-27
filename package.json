@@ -1,0 +1,25 @@
+{
+  "name": "facebook-event-scraper",
+  "version": "1.0.0",
+  "description": "proof of concept for scraping facebook events",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/kaspar-lemke/electron-facebook-scraper",
+  "keywords": [
+    "Electron",
+    "facebook",
+    "puppeteer",
+    "scraper"
+  ],
+  "author": "Kaspar Lemke",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "5.0.6"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "puppeteer": ">= 1.1.0 < 1.2.0"
+  }
+}
